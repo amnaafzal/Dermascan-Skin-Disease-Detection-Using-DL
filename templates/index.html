@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+
+<body>
+    <!-- header section starts -->
+
+    <header class="fixed-top py-3">
+
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <!-- <a href="#" class="logo">DermaScan<span class="fas fa-bacteria px-2"></span></a> -->
+            <a href="#" class="logo">DermaScan<span><img src="static/Images/pngimg.com - virus_PNG20.png" alt=""
+                        style="width: 40px; height: auto;"></span></a>
+
+            <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+            <nav class="nav">
+                <a href="{{ url_for('home') }}">home</a>
+                <a href="{{ url_for('about') }}">about</a>
+                <a href="{{ url_for('disease') }}">skin type and disease</a>
+                <a href="{{ url_for('prediction') }}">check my skin type</a>
+                <a href="{{ url_for('contact') }}">contact</a>
+            </nav>
+
+
+        </div>
+
+    </header>
+
+    <!-- header section end-->
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="container">
+
+            <div class="row min-vh-100 align-items-center pt-5">
+
+                <div class="col-md-6">
+                    <img src="static/Images/istockphoto-1248674930-612x612-removebg-preview.png" class="w-100" alt="">
+                    <!-- <img src="static/Images/istockphoto-1248674930-612x612-removebg-preview.png" class="w-100" alt=""> -->
+                </div>
+
+                <div class="col-md-6 content text-center text-md-start pl-md-5">
+                    <span>your skin is your best accessory </span>
+                    <h3>protect yourself from skin disease</h3>
+                    <a href="#" class="link-btn">learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+    
+   
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="container">
+
+            <div class="credit"> created by <span>Skin Disease Detection</span> | all rights reserved </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+    <!-- js file link  -->
+    <script src="static/main.js"></script>
+</body>
+
+</html>

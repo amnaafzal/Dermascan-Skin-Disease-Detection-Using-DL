@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+<body>
+    <!-- header section starts -->
+
+    <header class="fixed-top py-3">
+
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <!-- <a href="#" class="logo">DermaScan<span class="fas fa-bacteria px-2"></span></a> -->
+            <a href="#" class="logo">DermaScan<span><img src="static/Images/pngimg.com - virus_PNG20.png" alt=""
+                        style="width: 40px; height: auto;"></span></a>
+
+            <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+            <nav class="nav">
+                <a href="{{ url_for('home') }}">home</a>
+                <a href="{{ url_for('about') }}">about</a>
+                <a href="{{ url_for('disease') }}">skin type and disease</a>
+                <a href="{{ url_for('prediction') }}">check my skin type</a>
+                <a href="{{ url_for('contact') }}">contact</a>
+            </nav>
+
+
+        </div>
+
+    </header>
+
+    <!-- header section end-->
+
+
+    <!-- prevent section starts  -->
+
+    <section class="prevent my-7" id="prevent">
+
+        <h1 class="heading"> <span>Skin Type and Skin Diseases</span> </h1>
+
+        <div class="container">
+
+            <div class="d-flex flex-wrap justify-content-center">
+
+                <div class="box p-4 m-2">
+                    <img src="static/Images/dry.png" alt="">
+                    <h3>Actinic keratosis</h3>
+                    <p>Precancerous rough, scaly patches caused by prolonged exposure to sunlight.</p>
+                </div>
+
+                <div class="box p-4 m-2">
+                    <img src="static/Images/acne.png" alt="">
+                    <h3>Atopic Dermatitis</h3>
+                    <p>Chronic, itchy skin condition causing redness, dryness, and inflammation.</p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="static/Images/Normal.png" alt="">
+                    <h3>Benign Keratosis</h3>
+                    <p>Non-cancerous skin growth, often rough, brown, or wart-like in appearance.</p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="static/Images/oily.png" alt="">
+                    <h3>Dermatofibroma</h3>
+                    <p>Firm, small, harmless skin nodule, usually on legs or arms.</p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="static/Images/Normal.png" alt="">
+                    <h3>Melanocytic nevus</h3>
+                    <p>Commonly known as a mole; pigmented, benign skin growth from melanocytes.</p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="static/Images/Sensitive.png" alt="">
+                    <h3>Melanoma</h3>
+                    <p>Serious skin cancer developing from moles; often dark, irregular, and fast-growing.</p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="static/Images/acne.png" alt="">
+                    <h3>Squamous cell carcinoma</h3>
+                    <p>Common skin cancer; scaly, red patches or sores that may bleed.</p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="static/Images/Sensitive.png" alt="">
+                    <h3>Tinea Ringworm Candidiasis</h3>
+                    <p>Contagious ring-shaped rash caused by a skin-invading fungus.</p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="static/Images/acne.png" alt="">
+                    <h3>Vascular lesion</h3>
+                    <p>Abnormal blood vessels appearing as red, purple, or blue marks.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- prevent section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="container">
+
+         
+
+            <div class="credit"> created by <span>Skin Disease Detection</span> | all rights reserved </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+     <!-- js file link  -->
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+
+</html>

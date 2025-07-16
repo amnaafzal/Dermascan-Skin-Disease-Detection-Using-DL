@@ -13,8 +13,28 @@ UPLOAD_FOLDER = 'static/uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# Load model
-model = load_model("model.h5")
+import os
+import gdown
+
+MODEL_PATH = "model.h5"
+
+def download_model():
+    if not os.path.exists(MODEL_PATH):
+        print("Downloading model...")
+        # This is your shared Drive file ID
+        file_id = "1i-uE2sN-Lh96WVe1AkegbyE8QQ0eoNLq"
+        url = f"https://drive.google.com/uc?id={file_id}"
+        gdown.download(url, MODEL_PATH, quiet=False)
+        print("Model downloaded.")
+
+# Call this before model load
+download_model()
+
+# Now you can safely load the model
+from keras.models import load_model
+model = load_model(MODEL_PATH)
+
+
 
 # Class labels
 class_names = {

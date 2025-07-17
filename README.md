@@ -130,3 +130,9 @@ python app.py
 - Font Awesome
 
 - Google Fonts
+
+
+## 🚀 Live Demo
+
+📍 Deployed on Render.com : [https://dermascan-skin-disease-detection-using-dl.onrender.com/](https://dermascan-skin-disease-detection-using-dl.onrender.com/)
+

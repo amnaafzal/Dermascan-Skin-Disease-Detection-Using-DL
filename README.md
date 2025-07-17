@@ -31,7 +31,6 @@
 - 📷 Upload image or capture via webcam
 - 📱 Fully responsive UI
 - 📊 Dynamic result display with image preview
-- ✨ Clean and animated UI
 - 🌍 Google Maps embedded for contact location
 
 ---
